@@ -1,8 +1,9 @@
 class API {
-  constructor(apiURL, errorHandler) {
+  constructor(apiURL, errorHandler, endpoints = []) {
     this.errorHandler = errorHandler;
     this.apiURL = apiURL;
     this.ready = true;
+    this.endpoints = endpoints;
   }
 
   // eslint-disable-next-line class-methods-use-this
